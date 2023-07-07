@@ -1,0 +1,16 @@
+### README
+
+- charts为存放所有csv的文件夹
+- chart.csv是包含所有数据的表格
+- checkpoint_average_best-3.pt.test_constrained.out.txt是由所训练的模型直接生成的未经处理的文件
+- choice.py为选取数据的py文件，采用等距取样方法
+- chartGenerator.py为生成csv表格的py文件，生成表格存于charts中
+- csv1.py读取checkpoint_average_best-3.pt.test_constrained.out.txt生成chart.csv
+- csv2.py读取chart.csv生成一个包含team和两个team的total points的csv文件
+- DeleteLines.py可以删除csv文件中有数据缺失的行
+- PlayerAndPoints.py读取chart.csv将所有队员和对应的得分提取出来，生成一个PlayerAndPoints.csv文件
+- PlayerAndPoints2.py读取PlayerAndPoints.csv求有重复的球员的得分的平均值，生成PlayerAndPoints2.csv，保证每个球员只出现一次
+- PointsAndFieldGoalsAttempted.py读取chart.csv将所有队员和对应的得分和投篮次数提取出来，生成一个PointsAndFieldGoalsAttempted.csv文件
+- PointsAndFieldGoalsAttempted2.py读取PointsAndFieldGoalsAttempted.csv求有重复的球员的得分和投篮次数的平均值，生成PointsAndFieldGoalsAttempted2.csv，保证每个球员只出现一次
+- WinsAndTotalPoints.py读取chart.csv将所有球队和对应的胜场和总分提取出来，生成一个WinsAndTotalPoints.csv文件
+- WinsAndTotalPoints2.py读取WinsAndTotalPoints.csv求有重复的球队的胜场和总分的平均值，生成WinsAndTotalPoints2.csv，保证每个球队只出现一次
